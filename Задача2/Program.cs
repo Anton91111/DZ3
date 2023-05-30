@@ -7,7 +7,7 @@ Console.WriteLine("Введите координаты точки A (x,y,z):");
 double x1 = double.Parse(Console.ReadLine());
 double y1 = double.Parse(Console.ReadLine());
 double z1 = double.Parse(Console.ReadLine());
-Console.WriteLine("Введите координаты точки B (x,y,z):");
+Console.WriteLine("Введите координаты точки B (x2,y2,z2):");
 double x2 = double.Parse(Console.ReadLine());
 double y2 = double.Parse(Console.ReadLine());
 double z2 = double.Parse(Console.ReadLine());

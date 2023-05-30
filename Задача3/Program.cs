@@ -2,17 +2,26 @@
 Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
-Concole.Clear();
-Console.WriteLine("Введите число: ");
-int n = int.Parse(Console.ReadLine());
-Console.WriteLine("Таблица кубов чисел от 1 до {0}:", n);
-for (int i = 1; i <= n; i++)
-{
-int cube = i * i * i;
-Console.WriteLine(cube);
-if (i != n)
-{
-Console.WriteLine(", ");
-}
-}
 
+Console.Clear();
+Console.Write("Введите число N: ");
+int N = int.Parse(Console.ReadLine());
+int i = 1;
+int m = N; 
+if (N < 0)
+{
+i = N; 
+m = -N;
+N = -1; 
+}
+int[] result = new int[m];
+int a = 0;
+for (; i <= N; i++)
+{
+result[a] = i * i * i;
+a++;
+}
+for (a = 0; a < m; a++)
+{
+Console.Write($"{result[a]} ");
+}
